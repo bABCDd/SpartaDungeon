@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class PlayerCondition : MonoBehaviour
@@ -36,6 +37,26 @@ public class PlayerCondition : MonoBehaviour
     public void Eat(float amount)
     {
         hunger.Add(amount);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        // "Item_Hunger" 태그로 아이템 구분
+        if (other.CompareTag("Item_Hunger"))
+        {
+            Destroy(other.gameObject); // 아이템 삭제
+            StartCoroutine(IncreaseHungerOverTime());
+        }
+    }
+
+    IEnumerator IncreaseHungerOverTime()
+    {
+        hunger.Add(100); // 헝거 수치 +50
+        yield return new WaitForSeconds(1f); //1초 대기
+        hunger.Add(100);
+        yield return new WaitForSeconds(1f);
+        hunger.Add(100);
+        yield return new WaitForSeconds(1f);
     }
 
     public void Die()

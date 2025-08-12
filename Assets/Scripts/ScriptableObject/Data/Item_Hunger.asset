@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Item_Hunger
   m_EditorClassIdentifier: 
   displayName: "\uC74C\uC2DD\uC0C1\uC790"
-  description: "\uAC00\uAE4C\uC774 \uAC00\uBA74 \uBC30\uACE0\uD514\uC744 \uD68C\uBCF5\uD569\uB2C8\uB2E4.
-    e\uB97C \uB20C\uB7EC \uC0AC\uC6A9\uD569\uB2C8\uB2E4."
+  description: "\uAC00\uAE4C\uC774 \uAC00\uBA74 \uBC30\uACE0\uD514\uC744 \uD68C\uBCF5\uD569\uB2C8\uB2E4."
   type: 0
   icon: {fileID: 7482667652216324306, guid: c5d51955cca257c428f918b2929d23f6, type: 3}
   dropPrefab: {fileID: 3553757680335160828, guid: d7d8722070da1a544bae3ebc8891321d, type: 3}

@@ -1680,6 +1680,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Item_Hunger
       objectReference: {fileID: 0}
+    - target: {fileID: 3553757680335160828, guid: d7d8722070da1a544bae3ebc8891321d, type: 3}
+      propertyPath: m_TagString
+      value: Item_Hunger
+      objectReference: {fileID: 0}
+    - target: {fileID: 3789575046203001925, guid: d7d8722070da1a544bae3ebc8891321d, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389991449292714985, guid: d7d8722070da1a544bae3ebc8891321d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
