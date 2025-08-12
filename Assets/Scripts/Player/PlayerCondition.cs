@@ -44,7 +44,7 @@ public class PlayerCondition : MonoBehaviour
         // "Item_Hunger" 태그로 아이템 구분
         if (other.CompareTag("Item_Hunger"))
         {
-            Destroy(other.gameObject); // 아이템 삭제
+            Destroy(other.gameObject);
             StartCoroutine(IncreaseHungerOverTime());
         }
     }

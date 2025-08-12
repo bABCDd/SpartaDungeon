@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     private Vector2 curMovementInput;
     public float jumpPower;
+    public float detectDistance;
     public LayerMask groundLayerMask;
 
     [Header("Look")]
@@ -102,7 +103,7 @@ public class PlayerController : MonoBehaviour
 
         for (int i = 0; i < rays.Length; i++)
         {
-            if (Physics.Raycast(rays[i], 0.1f, groundLayerMask))
+            if (Physics.Raycast(rays[i], detectDistance, groundLayerMask))
             {
                 return true;
             }
